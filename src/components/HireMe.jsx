@@ -1,5 +1,5 @@
 import React from "react";
-import resumePDF from "../assets/Nishant_n2.pdf";
+import resumePDF from "../assets/Nishant_Resume.pdf";
 import gif from "../assets/hire.gif";
 
 const HireMe = () => {
