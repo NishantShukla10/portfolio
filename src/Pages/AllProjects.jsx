@@ -2,8 +2,8 @@ import React from 'react'
 
 const AllProjects = () => {
   return (
-    <div>
-      
+    <div className='text-9xl'>
+      Upcoming...
     </div>
   )
 }
