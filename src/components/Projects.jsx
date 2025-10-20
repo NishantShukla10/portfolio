@@ -11,8 +11,8 @@ const Projects = () => {
       image: img1,
       description:
         "Created a MERN stack application with full CRUD functionality, allowing users to be added, edited, deleted, and viewed in detail, with the ability to toggle user status between active and inactive. Implemented dynamic filters (gender, status), sorting, pagination, and search functionality on the homepage to improve user navigation and data accessibility. Integrated a seamless front-end (React) with a back-end (Express, MongoDB), optimizing data handling for real-time user management",
-      github: "https://github.com/NishantShukla10/user-app-details",
-      live: "https://user-details-mernapp.netlify.app/",
+      github: "https://github.com/NishantShukla10/userFlow-Manager",
+      live: "https://userflow-manager.netlify.app",
     },
     {
       title: "Shopping Cart",
