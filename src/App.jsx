@@ -9,13 +9,16 @@ import Experience from "./components/Experience";
 import CodingProfiles from "./components/CodingProfiles";
 import Footer from "./components/Footer";
 import HireMe from "./components/HireMe";
+import bg_grid from "./assets/bg_grid.svg";
 function App() {
   return (
     <div className="overflow-x-hidden font-sans">
       <Navbar />
 
       {/* Rest of the site stays centered */}
-      <div className="w-screen mx-auto flex flex-col bg-gradient-to-br from-gray-100 via-blue-100 to-white">
+      <div 
+        className="w-screen mx-auto flex flex-col bg-gradient-to-br from-gray-100 via-blue-100 to-white"
+      >
         <Hero />
         <About />
         <Skills />
