@@ -23,11 +23,11 @@ const Education = () => {
   ];
 
   return (
-    <section 
-      id="education" 
+    <section
+      id="education"
       className="relative w-full min-h-screen flex items-center py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden"
     >
-      
+
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
         <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-1000"></div>
@@ -37,8 +37,8 @@ const Education = () => {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px]"></div>
 
       <div className="relative w-11/12 max-w-7xl mx-auto flex flex-col gap-16">
-        
-        
+
+
         <div className="text-center space-y-4">
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
             My Education
@@ -51,45 +51,17 @@ const Education = () => {
 
 
         <div className="relative">
-          
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-pink-500 to-blue-500 transform -translate-x-1/2"></div>
-
-
-          <div className="space-y-12">
+          <div className="flex flex-wrap gap-8 max-w-6xl mx-auto justify-center">
             {educations.map((edu, index) => (
               <div
                 key={index}
-                className={`relative flex flex-col md:flex-row items-center gap-8 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className="relative flex flex-col items-center w-full lg:w-[calc(50%-1rem)]"
               >
-                
-                <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                  <div className={`relative w-16 h-16 rounded-full bg-gradient-to-r ${edu.color} p-1`}>
-                    <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center text-2xl">
-                      {edu.icon}
-                    </div>
-                  </div>
-                  
-                  <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${edu.color} blur-xl opacity-50`}></div>
-                </div>
-
-
-                <div className="hidden md:block w-1/2"></div>
-
-
-                <div className="w-full md:w-1/2">
+                <div className="w-full">
                   <div className="group relative">
-                    
                     <div className={`absolute -inset-1 bg-gradient-to-r ${edu.color} rounded-2xl blur-xl opacity-20 group-hover:opacity-40 transition duration-500`}></div>
-                    
-                    
+
                     <div className="relative p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 space-y-4">
-                      
-                      
-                      <div className="md:hidden text-4xl mb-4 text-center">{edu.icon}</div>
-
-
                       <div className="space-y-2">
                         <h3 className="text-2xl font-bold text-gray-200 group-hover:text-white transition-colors duration-300">
                           {edu.title}
@@ -99,9 +71,7 @@ const Education = () => {
                         </p>
                       </div>
 
-
                       <div className="space-y-3 pt-2">
-                        
                         <div className="flex items-center gap-3">
                           <div className={`flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-r ${edu.color} bg-opacity-20 flex items-center justify-center`}>
                             <svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,7 +84,6 @@ const Education = () => {
                           </div>
                         </div>
 
-
                         <div className="flex items-center gap-3">
                           <div className={`flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-r ${edu.color} bg-opacity-20 flex items-center justify-center`}>
                             <svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,7 +95,6 @@ const Education = () => {
                             <p className="text-gray-300 font-medium">{edu.duration}</p>
                           </div>
                         </div>
-
 
                         <div className="flex items-center gap-3">
                           <div className={`flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-r ${edu.color} bg-opacity-20 flex items-center justify-center`}>
