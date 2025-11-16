@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +16,13 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Education", href: "#education" },
-    { name: "Experience", href: "#experience" },
-    { name: "Coding", href: "#coding" },
+    { name: "Home", to: "/#home" },
+    { name: "About", to: "/#about" },
+    { name: "Skills", to: "/#skills" },
+    { name: "Projects", to: "/#projects" },
+    { name: "Education", to: "/#education" },
+    { name: "Experience", to: "/#experience" },
+    { name: "Coding", to: "/#coding" },
   ];
 
   return (
@@ -34,38 +35,40 @@ const Navbar = () => {
     >
       <div className="w-11/12 max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo / Name */}
-        <a href="#home" className="group flex items-center gap-2">
+        <HashLink to="/#home" smooth className="group flex items-center gap-2">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
             <h1 className="relative text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent px-3 py-1">
               NS
             </h1>
           </div>
-        </a>
+        </HashLink>
 
         {/* Desktop Nav */}
         <ul className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a
-                href={link.href}
+              <HashLink
+                to={link.to}
+                smooth
                 className="relative px-4 py-2 text-gray-300 font-medium text-sm transition-colors duration-300 hover:text-white group"
               >
                 {link.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </HashLink>
             </li>
           ))}
         </ul>
 
         {/* Hire Me Button - Desktop */}
-        <a
-          href="#hire"
+        <HashLink
+          to="/#hire"
+          smooth
           className="hidden lg:block relative px-6 py-2.5 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-sm overflow-hidden group transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]"
         >
           <span className="relative z-10">Hire Me</span>
           <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        </a>
+        </HashLink>
 
         {/* Mobile Hamburger Icon */}
         <button
@@ -113,23 +116,25 @@ const Navbar = () => {
                   transitionDelay: isOpen ? `${index * 50}ms` : "0ms",
                 }}
               >
-                <a
-                  href={link.href}
+                <HashLink
+                  to={link.to}
+                  smooth
                   onClick={() => setIsOpen(false)}
                   className="block px-4 py-3 text-gray-300 font-medium rounded-lg hover:bg-white/5 hover:text-white transition-all duration-300 border border-transparent hover:border-purple-500/30"
                 >
                   {link.name}
-                </a>
+                </HashLink>
               </li>
             ))}
             <li className="pt-4">
-              <a
-                href="#hire"
+              <HashLink
+                to="/#hire"
+                smooth
                 onClick={() => setIsOpen(false)}
                 className="block text-center px-4 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all duration-300"
               >
                 Hire Me
-              </a>
+              </HashLink>
             </li>
           </ul>
         </div>
