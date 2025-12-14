@@ -1,7 +1,8 @@
 import React from "react";
-import myImage from "../assets/profile_picture.jpg";
+// import myImage from "../assets/profile_picture.jpg";
+import myImage from "../assets/profile_picture2.png";
 
-const Hero = () => {  
+const Hero = () => {   
   return (
     <section
       id="home"
