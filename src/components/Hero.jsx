@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-screen min-h-screen flex justify-center items-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
+      className="relative w-full min-h-[100dvh] flex justify-center items-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
     >
       
       <div className="absolute inset-0 overflow-hidden">
