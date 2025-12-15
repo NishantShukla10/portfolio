@@ -6,20 +6,13 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-[100dvh] flex justify-center items-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
+      className="relative w-full min-h-[100svh] flex justify-center items-start md:items-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
     >
-      
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-700"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-1000"></div>
-      </div>
 
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px]"></div>
 
-
-      <div className="relative w-11/12 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-4 md:px-8 py-20 md:py-0">
+      <div className="relative w-11/12 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-4 md:px-8 pt-28 pb-16 md:py-0">
         
         
         <div className="flex-1 space-y-6 text-center md:text-left z-10">
@@ -96,23 +89,13 @@ const Hero = () => {
               />
               
               
-              <div className="absolute inset-0 rounded-full border-2 border-purple-500/30 animate-ping"></div>
               <div className="absolute -inset-4 rounded-full border border-purple-500/20"></div>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
-
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="flex flex-col items-center gap-2 animate-bounce">
-          <span className="text-gray-400 text-sm">Scroll Down</span>
-          <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
-      </div>
-    </section>
+    </section> 
   );
 };
 
