@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-[100svh] flex justify-center items-start md:items-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
+      className="relative w-full md:h-screen xs2:h-fit xs2:py-5 flex justify-center items-start md:items-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
     >
 
 
