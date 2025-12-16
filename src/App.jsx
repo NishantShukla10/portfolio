@@ -11,12 +11,13 @@ import CodingProfiles from "./components/CodingProfiles";
 import Footer from "./components/Footer";
 import HireMe from "./components/HireMe";
 import AllProjects from "./Pages/AllProjects";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <div className="overflow-x-hidden font-sans">
+    <div className="overflow-x-hidden font-sans !scroll-smooth">
         <Navbar />
-        
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={
             <>
